@@ -1,0 +1,141 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+ .marqueeWrap {
+  overflow: hidden;
+}
+
+@keyframes marquee
+{
+0% {
+  transform: translate3d(0, 0, 0);
+}
+100% {
+  transform: translate3d(-50%, 0, 0);
+}
+}
+* {
+  box-sizing: border-box;
+}
+.marquee {
+  height: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+}
+
+.acticleMarquee {
+  display: inline-block;
+  margin-right: 10px;
+  max-width: 300px;
+}
+
+.linkMarquee{
+  height: 22px;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #8a8a8a;
+}
+
+.slick-prev {
+  color: black !important;
+  padding: 10px !important;
+  background-color: white !important;
+  z-index: 99 !important;
+  left: 0px !important;
+  top: 50% !important;
+  width: 25px !important;
+  height: 35px !important;
+  padding-left: 5px !important;
+  border-radius: 5px;
+  font-size:15px !important;
+  box-shadow: 0px 0px 20px 0px rgba(44, 44, 44, 0.2) !important;
+}
+
+
+
+.slick-next {
+  color: black !important;
+  padding: 10px !important;
+  background-color: white !important;
+  z-index: 99 !important;
+  right: 0px !important;
+  top: 50% !important;
+  width: 25px !important;
+  height: 35px !important;
+  padding-left: 5px !important;
+  border-radius: 5px;
+  font-size:15px !important;
+  box-shadow: 0px 0px 20px 0px rgba(44, 44, 44, 0.2) !important;
+}
+
+
+.styleShadow{
+  box-shadow: 0px 0px 20px 0px rgba(44,44,44,0.1);
+}
+
+.bodyProductSale {
+  background: linear-gradient(165deg, #ff7937 0%, #ff3f73 60%);
+}
+
+:where(.css-dev-only-do-not-override-1adbn6x).ant-card .ant-card-body {
+  padding: 0px !important;
+}
+
+.voucherStyle {
+    background-color: #ee4f83;
+    margin-left: 0px;
+    min-height: 130px;
+    min-width: 90px;
+    border-left: dashed 2px #fff;
+    border-radius: 7px;
+}
+
+.beforeVoucher {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    position: absolute;
+    left: -23px;
+    border-radius: 100%;
+}
+
+.afterVoucher {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  position: absolute;
+  left: -23px;
+  bottom: 0px;
+  border-radius: 100%;
+}
+
+.divStyle .childDiv {
+  margin-left: 2px;
+  margin-right: 2px ;
+}
+
+.whiteColor{
+  color:hsla(0, 0%, 0%, 0.5)
+}
+
+.saleProductStyle .childDiv {
+  margin-left: 5px ;
+  margin-right: 5px ;
+}
+
+.styleShadow:hover > div.divHover {
+  display: block;
+}
+
